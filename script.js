@@ -28,11 +28,12 @@ function openSettings(){
 
 const toolbar = document.getElementById("toolbar");
 const inputField = document.getElementById("inputField");
+let keyBoardHeight = window.innerHeight + "px";
 
 inputField.addEventListener("focus", () => {
-    toolbar.style.bottom = "50px"; // فوق لوحة المفاتيح
+    toolbar.style.bottom = keyBoardHeight; // فوق لوحة المفاتيح
 });
 
 inputField.addEventListener("blur", () => {
-    toolbar.style.bottom = "-60px"; // يخفي الشريط عند فقدان التركيز
+    toolbar.style.bottom = "0"; // يخفي الشريط عند فقدان التركيز
 });
