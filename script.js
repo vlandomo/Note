@@ -30,7 +30,7 @@ const toolbar = document.getElementById("toolbar");
 const inputField = document.getElementById("inputField");
 
 inputField.addEventListener("focus", () => {
-    toolbar.style.bottom = '100px';
+    toolbar.style.bottom = '500px';
 });
 
 inputField.addEventListener("blur", () => {
