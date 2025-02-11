@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>note</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="index-header">
+      <h1>Folders</h1>
+      <p>4 Folders 6 notes</p>
+    </header>
+
+    <!-- section 1 -->
+    <section class="action-bar">
+      <button type="menu" onclick="showSideBarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="action-btn">
+        <button type="button" id="openFile">
+          <i class="fa-regular fa-file-pdf"></i>
+        </button>
+        <input
+          type="file"
+          id="fileInput"
+          accept="application/pdf"
+          style="display: none"
+        />
+        <button type="button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button type="button" onclick="showBobUp()">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="folders_section">
+      <div class="folders_title">
+        <i class="fa-regular fa-folder"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+        <p>Folders</p>
+      </div>
+      <div class="folders_cards">
+        <div class="card">
+          <p>1</p>
+          <h3>filder name</h3>
+          <button class="card-color"></button>
+        </div>
+        <div class="card">
+          <p>1</p>
+          <h3>filder name</h3>
+          <button></button>
+        </div>
+        <div class="card">
+          <p>1</p>
+          <h3>filder name</h3>
+          <button></button>
+        </div>
+        <div class="card">
+          <p>1</p>
+          <h3>filder name</h3>
+          <button></button>
+        </div>
+        <div class="card">
+          <p>1</p>
+          <h3>filder name</h3>
+          <button></button>
+        </div>
+        <button class="add_new_folder" onclick="greatNewFolder()"><i class="fa-solid fa-circle-plus"></i></button>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="notes_section">
+      <div class="notes_title">
+        <i class="fa-regular fa-note-sticky"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+        <p>Notes</p>
+      </div>
+
+      <div class="notes_cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </section>
+    <!-- input btn-->
+    <button class="add-btn" onclick="greatNewNote()">
+      <i class="fa-solid fa-pen-to-square"></i>
+    </button>
+
+    <!-- sidebar -->
+    <section class="side_bar">
+      <button class="settings_btn" onclick="openSettings()"><i class="fa-solid fa-gear"></i></button>
+
+      <div class="notes_info">
+        <button class="options">
+          <div class="option_name">
+            <i class="fa-solid fa-note-sticky"></i>
+            <p>All Notes</p>
+          </div>
+          <p>55</p>
+        </button>
+        <button class="options">
+          <div class="option_name">
+            <i class="fa-solid fa-trash-can"></i>
+            <p>Trash</p>
+          </div>
+          <p>7</p>
+        </button>
+        <hr>
+        <button class="options">
+          <div class="option_name">
+            <i class="fa-solid fa-note-sticky"></i>
+            <p>Folders</p>
+          </div>
+          <p>8</p>
+        </button>
+        <button class="mamage_folders_btn">Manage Folders</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
